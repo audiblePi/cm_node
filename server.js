@@ -88,9 +88,7 @@ function sortDown(d){
 }
 
 
-app.listen(3000, function(){
-    open('http://localhost:8080');
-});
+app.listen(3000);
 
 console.log("Johnny Five is Alive... on port 3000");
 
