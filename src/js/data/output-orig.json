@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "johndoe@email.com",
+    "phone": "904-555-1212",
+    "birthdate": "3/15/1971"
+  },
+  {
+    "id": 1,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane@email.com",
+    "phone": "904-555-2121",
+    "birthdate": "05/23/1990"
+  },
+    {
+    "id": 2,
+    "first_name": "Shane",
+    "last_name": "Kimbrough",
+    "email": "the_commander@email.com",
+    "phone": "904-565-1212",
+    "birthdate": "3/15/1971"
+  },
+  {
+    "id": 3,
+    "first_name": "Neil",
+    "last_name": "Armstrong",
+    "email": "space_guy@email.com",
+    "phone": "904-777-2121",
+    "birthdate": "05/23/1990"
+  },
+  {
+    "id": 4,
+    "first_name": "Sergey",
+    "last_name": "Ryzhikov",
+    "email": "cosmonaut451@email.com",
+    "phone": "495-121-2121",
+    "birthdate": "05/23/1990"
+  },
+  {
+    "id": 5,
+    "first_name": "Andrey",
+    "last_name": "Borisenko",
+    "email": "esa2020@email.com",
+    "phone": "495-526-2612",
+    "birthdate": "05/23/1990"
+  }
+]
