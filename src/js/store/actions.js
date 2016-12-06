@@ -7,7 +7,7 @@ export const EDIT_CONTACT = "EDIT_CONTACT";
 export const DELETE_CONTACT = "DELETE_CONTACT";
 export const SAVE_CONTACTS = "SAVE_CONTACTS";
 
-export function fetchContactDone(status, data){
+export function fetchDone(status, data){
 	return {
 		type: FETCH_DONE,
 		fetching: false,
@@ -27,7 +27,7 @@ export function fetchContacts(){
 
 		return axios.get(endpoint)
 			.then( function (response){
-				dispatch( fetchContactDone(response.status, response.data) );
+				dispatch( fetchDone(response.status, response.data) );
 			})
 			.catch( function (error){
 				console.log(error.message);
@@ -59,6 +59,7 @@ export function saveContacts(contacts){
 	axios.post("http://localhost:3000/contacts", contacts)
 		.then( function (response){
 			console.log(response);
+			dispatch( fetchDone(response.status, response.data) );
 		})
 		.catch( function (error){
 			console.log(error.message);
@@ -70,7 +71,7 @@ export function sortUp(contacts){
 		return axios.get("http://localhost:3000/contacts?sort=ASC")
 			.then( function (response){
 				console.log(response);
-				dispatch( fetchContactDone(response.status, response.data) );
+				dispatch( fetchDone(response.status, response.data) );
 			})
 			.catch( function (error){
 				console.log(error.message);
@@ -84,7 +85,7 @@ export function sortDown(contacts){
 		return axios.get("http://localhost:3000/contacts?sort=DSC")
 			.then( function (response){
 				console.log(response);
-				dispatch( fetchContactDone(response.status, response.data) );
+				dispatch( fetchDone(response.status, response.data) );
 			})
 			.catch( function (error){
 				console.log(error.message);

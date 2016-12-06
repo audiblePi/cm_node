@@ -1,7 +1,8 @@
 var express = require("express");
 var cors = require("cors");
 var bodyParser = require("body-parser");
-var jsonfile = require('jsonfile')
+var jsonfile = require('jsonfile');
+var open = require('open');
 var app = express();
 
 var file = './src/js/data/contacts.json';
@@ -87,7 +88,9 @@ function sortDown(d){
 }
 
 
-app.listen(3000);
+app.listen(3000, function(){
+    open('http://localhost:8080');
+});
 
 console.log("Johnny Five is Alive... on port 3000");
 

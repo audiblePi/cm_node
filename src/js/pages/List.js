@@ -30,7 +30,7 @@ const ArrowDownStyle = {
   bottom:".5rem"
 }
 
-export default class List extends React.Component {
+class List extends React.Component {
   constructor(props) {
     super(props);
   }
